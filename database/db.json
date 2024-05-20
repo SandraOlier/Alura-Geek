@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "name": "Darth Vader",
+      "price": "u$s 20",
+      "image": "https://i.pinimg.com/564x/69/6f/ad/696fad1db709048eb80817292ea85ac5.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Baby Yoda",
+      "price": "u$s 50",
+      "image": "https://i.pinimg.com/564x/cb/16/cf/cb16cfa113c5cfe6b2c51c0c4a4e3618.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Funko Pop",
+      "price": "u$S 45",
+      "image": "https://i.pinimg.com/564x/ec/8e/cd/ec8ecd3f22510f2a1e6de5cb9a258970.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Darth Vader Cat",
+      "price": "u$s 55",
+      "image": "https://i.pinimg.com/564x/07/77/c0/0777c0efb39c363a7697c42c9b34b08f.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Boba Fett",
+      "price": "u$s 60",
+      "image": "https://i.pinimg.com/564x/51/73/21/517321060e6c4a31fc4774b909829820.jpg",
+      "id": "5"
+    },
+    {
+      "name": "Star Wars 20 years",
+      "price": "u$s 70",
+      "image": "https://i.pinimg.com/564x/eb/e6/46/ebe6467116d80af2a44f81b932645243.jpg",
+      "id": "6"
+    },
+    {
+      "id": "c2c8",
+      "name": "Darth Vader",
+      "price": "u$s 25",
+      "image": "https://i.pinimg.com/564x/5f/b3/99/5fb399d50fb63d2766213e2e29c80462.jpg"
+    },
+    {
+      "id": "b5ac",
+      "name": "Darth Vader 2",
+      "price": "u$s 25",
+      "image": "https://i.pinimg.com/564x/5f/b3/99/5fb399d50fb63d2766213e2e29c80462.jpg"
+    },
+    {
+      "id": "7132",
+      "name": "Darth Vader 2",
+      "price": "u$s 25",
+      "image": "https://i.pinimg.com/564x/5f/b3/99/5fb399d50fb63d2766213e2e29c80462.jpg"
+    },
+    {
+      "id": "469b",
+      "name": "",
+      "price": "",
+      "image": ""
+    },
+    {
+      "id": "c714",
+      "name": "",
+      "price": "",
+      "image": ""
+    },
+    {
+      "id": "9518",
+      "name": "",
+      "price": "",
+      "image": ""
+    }
+  ]
+}
