@@ -23,8 +23,6 @@ function createCard (name, price, image, id){
                 </div>
   ` ;
  
-
- 
   productContainer.appendChild(card);
 return card;
 }

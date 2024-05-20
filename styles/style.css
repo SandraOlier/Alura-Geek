@@ -36,7 +36,7 @@ body {
 
 .header-h1 {
     margin-left: 20px; 
-    font-size: x-large;/* Añade espacio a la izquierda del h1 */
+    font-size: xx-large;/* Añade espacio a la izquierda del h1 */
 }
 
 
@@ -45,6 +45,7 @@ body {
     margin: 0 auto;
     padding: 20px 0;
     display: flex; /* Agregado para mostrar las secciones una al lado de la otra */
+    font-size: x-large;
 }
 
 section {
