@@ -120,7 +120,7 @@ section {
     display: flex;
     flex-direction: column; /* Ajustado para que los inputs queden uno debajo del otro */
     gap: 20px; /* Ajustado para agregar un espacio de separación entre los inputs */
-    
+    font-size: large;
 }
 
 .form-container input {
@@ -155,6 +155,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size:x-large ;
 }
 
 
