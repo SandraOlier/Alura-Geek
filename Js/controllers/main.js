@@ -22,6 +22,17 @@ function createCard (name, price, image, id){
                     </div>
                 </div>
   ` ;
+  function removeCard(id) {
+    // Busca la tarjeta con el id específico
+    const card = document.querySelector(`.card[data-id="${id}"]`);
+
+    // Si la tarjeta existe, la elimina
+    if (card) {
+        card.remove();
+    } else {
+        console.log(`No se encontró la tarjeta con el id ${id}`);
+    }
+}
 
  
   productContainer.appendChild(card);
@@ -63,26 +74,29 @@ form.addEventListener("submit", (event) => {
     .then((res) => console.log(res))
     .catch((err) => console.log(err));
 
-    const deleteButton = card.querySelector(".delete-button");
-    deleteButton.addEventListener("click", () => {
-        servicesProducts.deleteProduct(id)
-            .then(() => {
-                productContainer.removeChild(card);
-            })
-            .catch((err) => console.log(err));
-    });
-
-
-    servicesProducts.deleteProducts(id)
-    .then((res) => console.log(res))
-    .cath((res) => console.log(err));
 });
 
 
-
-
-
-
+// Captura el clic en el botón de eliminar
+productContainer.addEventListener("click", async (event) => {
+    event.preventDefault();
+    
+    // Verifica si el elemento clickeado es el ícono de eliminar
+    const deleteButton = event.target.closest("delete-button");
+    if (deleteButton) {
+        const itemId = deleteButton.dataset.id;
+        servicesProducts.deleteProduct(id)
+            .then(() => {
+                console.log('Producto eliminado con éxito');
+                const card = document.querySelector(`.card[data-id="${itemId}"]`);
+                if (card) {
+                    card.remove();
+                }
+                render(); 
+            })
+            .catch((err) => console.log(err));
+    }
+});
 
 
 render();

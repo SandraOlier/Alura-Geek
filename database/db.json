@@ -71,6 +71,12 @@
       "name": "",
       "price": "",
       "image": ""
+    },
+    {
+      "id": "5a68",
+      "name": "Darth Value 2",
+      "price": "u$s 25",
+      "image": "https://i.pinimg.com/564x/5f/b3/99/5fb399d50fb63d2766213e2e29c80462.jpg"
     }
   ]
 }
