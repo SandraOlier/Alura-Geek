@@ -60,7 +60,7 @@ productContainer.addEventListener("click", async (event) => {
     if (removeButton) {
         const itemId = removeButton.dataset.id;
         try {
-            await servicesProducts.deleteProduct(itemId); // Aquí está el cambio
+            await servicesProducts.deleteProducts(itemId); // Aquí está el cambio
             console.log('Producto eliminado con éxito');
             // Encuentra y elimina el elemento padre ".card"
             const cardToRemove = removeButton.closest(".card");
