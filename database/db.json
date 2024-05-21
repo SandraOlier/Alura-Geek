@@ -41,6 +41,24 @@
       "name": "Darth Vader",
       "price": "u$s 25",
       "image": "https://i.pinimg.com/564x/5f/b3/99/5fb399d50fb63d2766213e2e29c80462.jpg"
+    },
+    {
+      "id": "0e37",
+      "name": "Baby Yoda con café",
+      "price": "u$s 40",
+      "image": "https://i.pinimg.com/564x/4b/81/22/4b812284d06987d081221c0d0ec3d122.jpg"
+    },
+    {
+      "id": "3294",
+      "name": "Baby Yoda con perrito",
+      "price": "u$s 50",
+      "image": "https://i.pinimg.com/564x/43/94/63/439463fa9ea29fa550fd203b6e76a7fb.jpg"
+    },
+    {
+      "id": "39a8",
+      "name": "Babies yoda riéndose de mi proyecto ",
+      "price": "u$s60",
+      "image": "https://i.pinimg.com/564x/4c/b1/e9/4cb1e93488488176d85144f8f456f07c.jpg"
     }
   ]
 }
