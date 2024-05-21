@@ -16,7 +16,7 @@ function createCard(name, price, image, id) {
             <div class="card-container--value">
                 <p>${price}</p>
                 <button class="delete-button" data-id="${id}">
-                    <img src="img/trash icon.gif" alt="Eliminar" data-remove="true" data-id="${id}" />
+                    <img src="img/trash icon.gif" alt="Eliminar">
                 </button>
             </div>
         </div>
@@ -29,7 +29,7 @@ function createCard(name, price, image, id) {
 const render = async () => {
     try {
         const listProducts = await servicesProducts.productList();
-        productContainer.innerHTML = ''; // Limpia el contenedor antes de renderizar
+
         listProducts.forEach(product => {
             createCard(product.name, product.price, product.image, product.id);
         });
@@ -48,11 +48,9 @@ form.addEventListener("submit", (event) => {
     servicesProducts.createProducts(name, price, image)
         .then((res) => {
             console.log('Producto creado:', res);
-            render(); // Vuelve a renderizar la lista para incluir el nuevo producto
         })
         .catch((err) => console.error('Error al crear el producto:', err));
 });
-
 // Captura el clic en el botón de eliminar
 productContainer.addEventListener("click", async (event) => {
     event.preventDefault();
@@ -62,7 +60,7 @@ productContainer.addEventListener("click", async (event) => {
     if (removeButton) {
         const itemId = removeButton.dataset.id;
         try {
-            await servicesProducts.deleteProduct (itemId); // Aquí está el cambio
+            await servicesProducts.deleteProduct(itemId); // Aquí está el cambio
             console.log('Producto eliminado con éxito');
             // Encuentra y elimina el elemento padre ".card"
             const cardToRemove = removeButton.closest(".card");
@@ -76,6 +74,7 @@ productContainer.addEventListener("click", async (event) => {
         }
     }
 });
+
 
 
 render();

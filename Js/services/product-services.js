@@ -8,7 +8,7 @@ const createProducts = (name, price, image) => {
     return fetch("http://localhost:3000/products", {
     method: "POST",
     headers: {
-        "Content-Type": "aplication/json", 
+        "Content-Type": "application/json", 
     },
     body: JSON.stringify({
         name,
@@ -23,7 +23,7 @@ const deleteProducts = (id) => {
     return fetch(`http://localhost:3000/products/${id}`, {
         method: "DELETE",
         headers: {
-            "Content-Type": "application/json", 
+            "Content-Type":"application/json", 
         },
     })
     .then((res) => res.json())
